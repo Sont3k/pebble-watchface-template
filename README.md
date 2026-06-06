@@ -1,5 +1,7 @@
 # Pebble Watchface Template
 
+<img width="297" height="334" alt="image" src="https://github.com/user-attachments/assets/486094cb-a82c-4e69-a0a4-83c4e52f4bee" />
+
 Pebble watchface template based on the official Pebble guidelines. The project
 uses the Pebble SDK, a native C watchface, PebbleKit JS for phone-side services,
 and Clay for user configuration.
