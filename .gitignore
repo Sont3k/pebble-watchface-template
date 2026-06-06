@@ -1,0 +1,21 @@
+# Ignore build generated files
+build/
+# CMake build debug
+cmake-build-debug/
+# Node / npm (Clay dependency)
+node_modules/
+
+# Generated Files
+.lock-waf*
+*.o
+*.a
+*.so
+*.dylib
+
+# IDE
+.vs/
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
