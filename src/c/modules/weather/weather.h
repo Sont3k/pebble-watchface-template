@@ -5,6 +5,7 @@
 
 extern TextLayer *s_weather_layer;
 
+void weather_init();
 void weather_on_window_load(Window *window, Layer *window_layer, GRect bounds);
 void weather_on_window_unload(Window *window);
 

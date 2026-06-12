@@ -1,9 +1,9 @@
 #include "clay_settings.h"
 
 #include "../main_window.h"
-#include "../services/battery/battery.h"
-#include "../services/time/time.h"
-#include "../services/weather/weather.h"
+#include "../modules/battery/battery.h"
+#include "../modules/time/time.h"
+#include "../modules/weather/weather.h"
 
 ClaySettings settings;
 

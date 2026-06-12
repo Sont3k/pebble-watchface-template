@@ -1,6 +1,11 @@
 #include "weather.h"
 
 TextLayer *s_weather_layer;
+
+void weather_init() {
+
+}
+
 static GFont s_weather_font;
 
 void weather_on_window_load(Window *window, Layer *window_layer, GRect bounds) {

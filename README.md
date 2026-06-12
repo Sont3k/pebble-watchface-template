@@ -48,12 +48,12 @@ pebble install --phone <ip>
 
 ```text
 src/c/                         Native watchface source
-src/c/services/app_message/    AppMessage setup and handlers
-src/c/services/battery/        Battery indicator service
-src/c/services/bluetooth/      Bluetooth indicator service
-src/c/services/time/           Time and date service
-src/c/services/timeline_peek/  Timeline peek service
-src/c/services/weather/        Weather display service
+src/c/modules/app_message/    AppMessage setup and handlers
+src/c/modules/battery/        Battery indicator service
+src/c/modules/bluetooth/      Bluetooth indicator service
+src/c/modules/time/           Time and date service
+src/c/modules/timeline_peek/  Timeline peek service
+src/c/modules/weather/        Weather display service
 src/c/settings/                Clay settings persistence and UI updates
 src/pkjs/                      PebbleKit JS and Clay configuration
 resources/fonts/               Bundled watchface fonts

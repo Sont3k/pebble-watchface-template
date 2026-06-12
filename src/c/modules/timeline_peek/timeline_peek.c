@@ -33,20 +33,11 @@ void prv_unobstructed_will_change(GRect final_unobstructed_screen_area, void * c
 void prv_unobstructed_change(AnimationProgress progress, void * context) {
     GRect bounds = layer_get_unobstructed_bounds(s_window_layer);
 
-    // Reposition time, date, and weather to fit in the available space
-    int date_height = 30;
-    int block_height = 56 + date_height;
-    int time_y = (bounds.size.h / 2) - (block_height / 2) - 10;
-    int date_y = time_y + 56;
+    // Reposition time/date via the time module
+    time_relayout(bounds);
+
+    // Reposition weather to fit in the available space
     int weather_y = bounds.size.h - PBL_IF_ROUND_ELSE(40, 30);
-
-    GRect time_frame = layer_get_frame(text_layer_get_layer(s_time_layer));
-    time_frame.origin.y = time_y;
-    layer_set_frame(text_layer_get_layer(s_time_layer), time_frame);
-
-    GRect date_frame = layer_get_frame(text_layer_get_layer(s_date_layer));
-    date_frame.origin.y = date_y;
-    layer_set_frame(text_layer_get_layer(s_date_layer), date_frame);
 
     GRect weather_frame = layer_get_frame(text_layer_get_layer(s_weather_layer));
     weather_frame.origin.y = weather_y;

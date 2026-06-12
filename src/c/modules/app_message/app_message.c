@@ -3,9 +3,6 @@
 #include "../../settings/clay_settings.h"
 
 void app_message_init(void) {
-    // Register with TickTimerService
-    tick_timer_service_subscribe(MINUTE_UNIT, app_message_tick_handler);
-
     // Register AppMessage callbacks
     app_message_register_inbox_received(inbox_received_callback);
     app_message_register_inbox_dropped(inbox_dropped_callback);
