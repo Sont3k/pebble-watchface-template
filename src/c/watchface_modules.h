@@ -3,7 +3,6 @@
 
 #include <pebble.h>
 
-#include "modules/background_image/background_image.h"
 #include "modules/battery/battery.h"
 #include "modules/bluetooth/bluetooth.h"
 #include "modules/time/time.h"
@@ -19,7 +18,6 @@ typedef struct {
 
 static WatchfaceModule s_modules[] = {
     {app_message_init, NULL, app_message_tick_handler, NULL},
-    {background_image_init, background_image_on_window_load, NULL, background_image_on_window_unload},
     {time_init, time_on_window_load, time_tick_handler, time_on_window_unload},
     {battery_init, battery_on_window_load, NULL, battery_on_window_unload},
     {bluetooth_init, bluetooth_on_window_load, NULL, bluetooth_on_window_unload},
